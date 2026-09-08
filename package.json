@@ -1,0 +1,15 @@
+{
+  "name": "ledger-stock-tracker",
+  "version": "1.0.0",
+  "description": "NSE bulk/block deals, rising delivery %, and FII/DII activity tracker",
+  "scripts": {
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
