@@ -1,0 +1,9 @@
+{
+  "appId": "com.ledger.stocktracker",
+  "appName": "Ledger",
+  "webDir": "web",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": true
+  }
+}
