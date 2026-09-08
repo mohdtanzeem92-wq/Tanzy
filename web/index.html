@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Ledger — NSE Deals, Delivery &amp; FII/DII</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Ledger</h1>
+  <div class="sub">NSE bulk/block deals · rising delivery % · <span>FII/DII</span> activity</div>
+  <nav class="tabs">
+    <button class="active" data-target="panel-deals">Deals</button>
+    <button data-target="panel-delivery">Delivery ↑</button>
+    <button data-target="panel-fiidii">FII / DII</button>
+  </nav>
+</header>
+
+<main>
+
+  <section id="panel-deals" class="panel active">
+    <div class="panel-head">
+      <h2>Bulk &amp; block deals</h2>
+      <span class="updated" id="deals-updated">—</span>
+    </div>
+    <table class="ledger">
+      <thead>
+        <tr>
+          <th>Symbol</th><th>Type</th><th>Client</th><th>Side</th>
+          <th class="num">Qty</th><th class="num">Price</th>
+        </tr>
+      </thead>
+      <tbody id="deals-body">
+        <tr><td colspan="6" class="empty-state">Loading…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="panel-delivery" class="panel">
+    <div class="panel-head">
+      <h2>Rising delivery %</h2>
+      <span class="updated" id="delivery-updated">—</span>
+    </div>
+    <div class="note">Sorted by delivery-to-traded-quantity — higher usually means genuine buying/holding rather than intraday churn.</div>
+    <table class="ledger">
+      <thead>
+        <tr>
+          <th>Symbol</th><th class="num">Delivery %</th><th class="num">Qty traded</th>
+          <th class="num">LTP</th><th class="num">Chg</th>
+        </tr>
+      </thead>
+      <tbody id="delivery-body">
+        <tr><td colspan="6" class="empty-state">Loading…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="panel-fiidii" class="panel">
+    <div class="panel-head">
+      <h2>FII / DII activity</h2>
+      <span class="updated" id="fiidii-updated">—</span>
+    </div>
+    <div class="note">Market-level cash-segment figures published by NSE. Per-stock FII/DII holding is only disclosed quarterly in shareholding patterns, not daily.</div>
+    <table class="ledger">
+      <thead>
+        <tr>
+          <th>Category</th><th>Date</th><th class="num">Buy</th>
+          <th class="num">Sell</th><th class="num">Net</th>
+        </tr>
+      </thead>
+      <tbody id="fiidii-body">
+        <tr><td colspan="6" class="empty-state">Loading…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  Data refreshed by a scheduled GitHub Action. Source: NSE public endpoints (unofficial) and Yahoo Finance.
+  For information only — not investment advice.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
