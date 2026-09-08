@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-09-08T09:00:00",
+  "bulk_deals": [
+    {"symbol": "IDEA", "clientName": "Sample Fund House", "buySell": "BUY", "quantity": 4500000, "tradePrice": 8.45},
+    {"symbol": "SUZLON", "clientName": "Sample Investor LLP", "buySell": "SELL", "quantity": 2100000, "tradePrice": 61.2}
+  ],
+  "block_deals": [
+    {"symbol": "YESBANK", "clientName": "Sample AIF", "buySell": "BUY", "quantity": 12000000, "tradePrice": 21.35}
+  ]
+}
