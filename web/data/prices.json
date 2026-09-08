@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-09-08T09:00:00",
+  "stocks": [
+    {"symbol": "RELIANCE", "close": 2985.6, "volume": 5400000, "changePct": 1.24},
+    {"symbol": "TCS", "close": 4210.15, "volume": 2100000, "changePct": -0.42},
+    {"symbol": "ICICIBANK", "close": 1215.9, "volume": 8100000, "changePct": 0.88},
+    {"symbol": "TATASTEEL", "close": 168.35, "volume": 15600000, "changePct": 2.05}
+  ]
+}
